@@ -1,0 +1,232 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100vh; */
+    justify-content: center;
+}
+h1 {
+    color: #333;
+}
+.contenedor-juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.contenedor-palabra {
+    font-size: 24px;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    color: #555;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin: 10px auto;
+}
+.botones button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    background-color: #d8d0d0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', cursive;
+}
+.botones button:hover {
+    background-color: #999898;
+}
+.contenedor-palabra span {
+    padding: 0 5px;
+    font-size: 24px;
+}
+.intentos, .cronometro {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.cronometro {
+    color: #d32f2f;
+}
+.dibujo {
+    position: relative;
+    height: 170px;
+    width: 190px;
+    margin-top: 20px;
+}
+.dibujo > div {
+    position: absolute;
+    background-color: #333;
+}
+
+.poste-inferior {
+    width: 120px;
+    height: 5px;
+    bottom: 0px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.poste-vertical {
+    width: 5px;
+    height: 155px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.poste-superior {
+    width: 80px;
+    height: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.cuerda {
+    width: 5px;
+    height: 25px;
+    margin-left: 90px;
+    margin-top: 5px;
+}
+.cabeza {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    margin-left: 77px;
+    margin-top: 30px;
+}
+.poste-cuerpo {
+    width: 5px;
+    height: 70px;
+    margin-top: 45px;
+    margin-left: 90px;
+}
+.brazo-izquierdo {
+    width: 5px;
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 82px;
+    transform: rotate(45deg);
+}
+.brazo-derecho {
+    width: 5px;
+    height: 20px;
+    margin-top: 70px;
+    margin-left: 98px;
+    transform: rotate(-45deg);
+}
+.pierna-izquierda {
+    width: 5px;
+    height: 20px;
+    margin-top: 111px;
+    margin-left: 82px;
+    transform: rotate(45deg);
+}
+.pierna-derecha {
+    width: 5px;
+    height: 20px;
+    margin-top: 111px;
+    margin-left: 98px;
+    transform: rotate(-45deg);
+}
+
+.formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+.formulario label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+.formulario input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', cursive;
+}
+.botones-formulario {
+    display: flex;
+    justify-content: space-around;
+}
+.botones-formulario button {
+    width: 40%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background-color: #d8d0d0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', cursive;
+}
+.botones-formulario button:hover {
+    background-color: #999898;
+}
+.botones-formulario .boton-ranking{
+    width: 80%;
+}
+.mensaje-final {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+    font-weight: bold;
+}
+.cabeza,
+.poste-cuerpo,
+.brazo-derecho,
+.brazo-izquierdo,
+.pierna-derecha,
+.pierna-izquierda,
+.poste-superior,
+.cuerda,
+.poste-vertical {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+.iratras{
+    position: absolute; 
+    top: 10px;  
+    left: 10px;
+    margin: 20px;
+}
+
+.iratras i {
+    font-size: 32px;
+    color: #000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}

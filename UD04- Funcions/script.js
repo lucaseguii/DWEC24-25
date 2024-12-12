@@ -229,5 +229,5 @@ function kaprekar(num) {
     console.log("¡Llegaste a 6174!");
 }
 
-kaprekar(7656);
+kaprekar(2546);
 
